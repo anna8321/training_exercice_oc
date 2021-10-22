@@ -5,95 +5,135 @@
     <title>maquette-mini-project</title>
     <meta name="description" content="mini project of a french cookies  maquette.">
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 
     <link rel="shortcut icon" href="img/small-logo-color.png" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />*
+    <link rel="stylesheet" type="text/css" href="custom.css">
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
     <div class="wrapper">
+      <main class="th-recipe-view">
 
-      <div class="card-recipe">
-
-        <div class="recipe-image">
-          <!-- place the image of french cookies here -->
-          <img src="./images/avocado.jpg" class="shadow-sm rounded image-recipe" alt="The recipe image - a cutting board with some ingredients" />
-        </div>
-
-        <div class="recipe-title">
-          <h1>French Cookies</h1><!-- h1 French cookies title -->
-        </div>
-
-        <div class="recipe-description">
-          <!-- p description of the recipe -->
-          <p class="">
-            Efficient aggregate maximize clicks-and-mortar infrastructures
-            communities weblogs best-of-breed blogospheres frictionless
-            interfaces B2C.
-          </p>
-        </div>
-
-        <div class="recipe-overview">
-          <h2>Overview</h2>
-
-          <div class="col"><!-- rating stars -->
-            <ul class="list-unstyled">
-              <li class="difficulty-text">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </li>
-              <li>Difficulty</li>
-            </ul>
+          <!-- place of the image -->
+          <div class="container mb-3 text-center">
+            <img
+            src="./images/choco.jpg"
+            class="recipe-picture" style="object-fit: cover; width: 780px; height: 280px; border-radius: 15px;"
+            alt="The recipe image - a cutting board with some ingredients"
+            />
           </div>
 
-          <div class="col"><!-- price -->
-            <ul>
-              <li>€€</li>
-              <li>Cost</li>
-            </ul>
+          <div class="container mb-3">
+            <h1>French Cookies</h1><!-- h1 French cookies title -->
+            <!-- p description of the recipe -->
+            <p class="description">
+              Efficient aggregate maximize clicks-and-mortar infrastructures
+              communities weblogs best-of-breed blogospheres frictionless
+              interfaces B2C.
+            </p>
           </div>
 
-          <div class="col"><!-- preparation time -->
-            <ul>
-              <li>45min</li>
-              <li>Preparation time</li>
-            </ul>
+          <div class="container mb-3">
+            <h2 class="border-bottom border-darker-light mb-3">Overview</h2>
+            <div class="row flex-nowrap overflow-auto">
+              <div class="col "><!-- difficulty stars -->
+                <ul class="list-unstyled">
+                  <li class="difficulty-text">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </li>
+                  <li>Difficulty</li>
+                </ul>
+              </div>
+
+              <div class="col"><!-- price -->
+                <ul class="list-unstyled">
+                  <li class="circle-box border rounded-circle mb-2 text-center text-success">€€</li>
+                  <li class="text-center text-box">Cost</li>
+                </ul>
+              </div>
+
+              <div class="col"><!-- preparation time -->
+                <ul class="list-unstyled">
+                  <li class="circle-box border rounded-circle mb-2 text-center text-success">45min</li>
+                  <li class="text-center text-box">Preparation time</li>
+                </ul>
+              </div>
+
+              <div class="col"><!--cooking time-->
+                <ul class="list-unstyled">
+                  <li class="circle-box border rounded-circle mb-2 text-center text-success">0min</li>
+                  <li class="text-center text-box">Cooking time</li>
+                </ul>
+              </div>
+
+              <div class="col"><!-- resting time -->
+                <ul class="list-unstyled">
+                  <li class="circle-box border rounded-circle mb-2 text-center text-success">10min</li>
+                  <li class="text-center text-box">Resting time</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div class="col"><!--cooking time-->
-            <ul>
-              <li>0min</li>
-              <li>Cooking time</li>
-            </ul>
+          <div class="container mb-3">
+          <h2 class="border-bottom border-darker-light mb-3">Ingredients</h2> <!-- number of people for this recipe + and - -->
+            <p>
+              <span class="lead mr-1">Servings: </span>
+              <i class="fas fa-minus"></i> <span class="lead mx-1">4</span>
+              <i class="fas fa-plus"></i>
+            </p>
+
+            <table class="table">
+              <caption>List of the recipe ingredients</caption>
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Metric</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Tomato</td>
+                  <td>2</td>
+                  <td>Piece</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Chocolate</td>
+                  <td>300</td>
+                  <td>Gram</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Flour</td>
+                  <td>150</td>
+                  <td>Gram</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Milk</td>
+                  <td>25</td>
+                  <td>Cl</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-
-          <div class="col"><!-- resting time -->
-            <ul>
-              <li>10min</li>
-              <li>Resting time</li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="recipe-ingredients">
-         <h2>Ingredients</h2> <!-- number of people for this recipe + and - -->
-          <p>
-            <span class="lead mr-1">Servings: </span>
-            <i class="fas fa-minus"></i> <span class="lead mx-1">4</span>
-            <i class="fas fa-plus"></i>
-          </p>
-        </div>
-
-      </div>
+      </main>
     </div>
   </body>
 

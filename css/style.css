@@ -1,5 +1,32 @@
 
-.image-recipe {
-  width: 550px;
-  height: 500px;
+.recipe-picture {
+  border-radius: 46px;
+}
+
+.circle-box {
+  height: 95px;
+  width: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-box {
+  width: 75px;
+}
+
+.difficulty-text {
+  height: 75px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-decoration: none;
 }
